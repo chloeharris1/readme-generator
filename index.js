@@ -1,8 +1,10 @@
 // Including packages needed for this application
 const inquirer = require("inquirer");
 const fs = require('fs');
+// README markdown file
+const markdown = require('./utils/generateMarkdown')
 
-// Array of questions for user input: Project Description, Installation, Usage, License, Contributing, Tests, and Questions
+// Array of questions for user input: GH Username, Email, Project Description, License, Installation, Test Instructions, Usage, Contributing 
 const promptUser = () => {
     return inquirer.prompt([
       {
@@ -53,39 +55,7 @@ const promptUser = () => {
         name: 'contributing',
         message: 'What does the user need to know about contributing to the repo?',
       },
-    ]);
-  };
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-// // TODO: Create a function to write README file
-// function writeToFile(fileName, data) {}
-
-// // TODO: Create a function to initialize app
-// function init() {}
-
-// // Function call to initialize app
-// init();
+    ])
+    .then((response) => {
+        markdown.writeFile(response)
+    });
