@@ -27,7 +27,7 @@ function generateMarkdown(response) {
   ${response.test}
   ## Questions 
   If you have any questions about this project, please contact me at ${response.email}. 
-  You can find more of my work at [${resp.username}](https://github.com/${resp.username})
+  You can find more of my work at [${response.username}](https://github.com/${response.username})
   `
 }
 module.exports = generateMarkdown;
