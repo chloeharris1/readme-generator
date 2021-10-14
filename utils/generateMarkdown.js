@@ -2,7 +2,7 @@
 const fs = require('fs');
 
 // Generate markdown function 
-const generateMarkdown = (response) => {
+function generateMarkdown(response) {
   return `# ${response.title}
   ![license badge](https://img.shields.io/badge/license-${response.license}-blue)
   ## Description 

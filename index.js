@@ -1,11 +1,13 @@
 // Including `inquirer` package needed for this application
 const inquirer = require("inquirer");
 // Importing the `fs` module to enable interaction with the file system 
+// 
 const fs = require('fs');
 // Generate markdown file
 const markdown = require("./utils/generateMarkdown");
 
 // Array of questions for user input: GH Username, Email, Project Description, License, Installation, Test Instructions, Usage, Contributing 
+const promptUser = () => {
 inquirer.prompt([
       {
         type: 'input',
@@ -58,4 +60,17 @@ inquirer.prompt([
     ])
     .then((response) => {
       markdown.writeFile(response)
-  })
+      if (err) console.error(err));
+    }
+  };
+promptUser();
+
+
+// const init = () => {
+    // promptUser()
+    // .then((answers) => fs.writeFileSync('README.md', generateMarkdown(response)))
+    // .then (() => console.log('Successfully wrote to 'README.md'))
+    // .catch(err) => console.log(err));
+// }
+
+// init()
