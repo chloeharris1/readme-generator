@@ -1,11 +1,12 @@
-// Including packages needed for this application
+// Including `inquirer` package needed for this application
 const inquirer = require("inquirer");
+// Importing the `fs` module to enable interaction with the file system 
 const fs = require('fs');
 // README markdown file
 const markdown = require('./utils/generateMarkdown')
 
 // Array of questions for user input: GH Username, Email, Project Description, License, Installation, Test Instructions, Usage, Contributing 
-const promptUser = () => {
+const promptUser = (response) => {
     return inquirer.prompt([
       {
         type: 'input',
@@ -56,6 +57,13 @@ const promptUser = () => {
         message: 'What does the user need to know about contributing to the repo?',
       },
     ])
-    .then((response) => {
-        markdown.writeFile(response)
-    });
+}
+    const init = () => {
+      promptUser()
+      // writeFileSync method uses promises instead of a callback function
+        .then((response) => fs.writeFileSync('README.md', writeFile(response)))
+        .then(() => console.log('Successfully wrote to README.md'))
+        .catch((err) => console.error(err));
+    };
+    
+    init();
