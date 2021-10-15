@@ -30,7 +30,7 @@
   You can find more of my work at [chloeharris1](https://github.com/chloeharris1)
   #
   Application Repository:
-  ![screenshot](assets/images/repo.png)
+<img width="1233" alt="repo" src="https://user-images.githubusercontent.com/89039793/137429931-8b5136c6-a69c-46e2-89d6-5992402675a9.PNG">
   ## Walkthrough Video
   https://watch.screencastify.com/v/667Hl7MCcqrJVWFGMA3a
   
