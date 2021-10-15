@@ -11,7 +11,6 @@
   npm i
   ## Usage 
   Use in terminal 
-  // ![screenshot](assets/images/screenshot.png)
   ## Credits 
   Chloe Harris - [GitHub Profile](https://github.com/chloeharris1)
   ## License
