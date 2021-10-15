@@ -58,19 +58,11 @@ return inquirer.prompt([
       },
     ]);
 };
-//     .then((response) => {
-//       // markdown.writeFile(response)
-//       fs.writeFile(response)
-//       if (err) console.error(err);
-//     }
-//   }; 
-// promptUser();
-
 
 const init = () => {
     promptUser()
-    .then((response) => fs.writeFileSync('README.md', generateMarkdown(response)))
+    .then((response) => fs.writeFileSync('./output/README.md', generateMarkdown(response)))
     .then (() => console.log('Successfully wrote to README.md'))
-    .catch(err => console.log(err));
+    .catch(err => console.log(err))
 };
 init();
