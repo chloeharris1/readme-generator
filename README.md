@@ -11,7 +11,7 @@
   npm i
   #
   Installing NPM Inquirer using Terminal:
-  ![screenshot](assets/images/npmpackages.png)
+  ![screenshot](./assets/images/npmpackages.png)
   ## Usage 
   Uses inquire, fs, utils
   #
