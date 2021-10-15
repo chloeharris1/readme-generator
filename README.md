@@ -9,9 +9,14 @@
   - [License](#license)
   ## Installation 
   npm i
+  #
+  Installing NPM Inquirer using Terminal:
+  // ![screenshot](assets/images/npmpackages.png)
   ## Usage 
-  Uses inquire, fs, util
-  // ![screenshot](assets/images/screenshot.png)
+  Uses inquire, fs, utils
+  #
+  Example of Successfully Generated README from User's Input in Terminal: 
+  // ![screenshot](assets/images/generatedreadme.png)
   ## Credits 
   Chloe Harris - [GitHub Profile](https://github.com/chloeharris1)
   ## License
@@ -23,4 +28,7 @@
   ## Questions 
   If you have any questions about this project, please contact me at chloe.a.harris17@gmail.com. 
   You can find more of my work at [chloeharris1](https://github.com/chloeharris1)
+  #
+  Application Repository:
+  // ![screenshot](assets/images/.png)
   
